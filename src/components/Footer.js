@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950 px-6 py-8">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-slate-400">Version 2.3</p>
+        <p className="text-sm text-slate-400">Version 2.4</p>
 
         <div className="flex items-center gap-3">
           <a
