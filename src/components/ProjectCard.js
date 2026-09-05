@@ -46,7 +46,7 @@ export default function ProjectCard({
               rel="noopener noreferrer"
               className="text-sm font-semibold text-indigo-400 transition-colors duration-200 hover:text-indigo-300"
             >
-              GitHub Repository →
+              GitHub Repo →
             </a>
           )}
 

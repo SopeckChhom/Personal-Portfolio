@@ -60,14 +60,17 @@ export default function ProjectCarousel({ projects }) {
       dragging: true,
       moved: false,
     };
-    setIsDragging(true);
-    event.currentTarget.setPointerCapture(event.pointerId);
   };
 
   const onPointerMove = (event) => {
     if (!dragState.current.dragging) return;
     const dx = event.clientX - dragState.current.startX;
-    if (Math.abs(dx) > 3) dragState.current.moved = true;
+    if (Math.abs(dx) > 3 && !dragState.current.moved) {
+      dragState.current.moved = true;
+      setIsDragging(true);
+      event.currentTarget.setPointerCapture(event.pointerId);
+    }
+    if (!dragState.current.moved) return;
     setPosition(dragState.current.startPosition - dx / DRAG_SENSITIVITY_DIVISOR);
   };
 
