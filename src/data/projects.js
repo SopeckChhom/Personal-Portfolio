@@ -26,6 +26,21 @@ const projects = [
     github: "https://github.com/BrandonChhom/UCAdmissionsExplorer",
     demo: "https://uc-admissions-explorer.streamlit.app/",
   },
+  {
+    title: "Gudeats",
+    description:
+      "A food-sharing social app where users post photos of meals with recipes and locations. Posts reset into a fresh weekly spread, encouraging intentional sharing over doomscrolling.",
+    technologies: [
+      "MongoDB",
+      "Express.js",
+      "React.js",
+      "Node.js",
+      "Cloudinary",
+    ],
+    image: "/project-images/gudeats.png",
+    github: "https://github.com/BrandonChhom/gudeats",
+    demo: "",
+  },
 ];
 
 export default projects;

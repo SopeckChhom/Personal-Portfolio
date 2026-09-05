@@ -9,13 +9,14 @@ export default function ProjectCard({
   demo,
 }) {
   return (
-    <article className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-7 shadow-sm transition duration-200 hover:-translate-y-1 hover:border-indigo-500/40 hover:shadow-lg hover:shadow-black/30">
+    <article className="flex h-full flex-col rounded-2xl border border-slate-800 bg-slate-900 p-7 shadow-lg shadow-black/30">
       {image && (
         <div className="relative mb-6 aspect-video overflow-hidden rounded-xl border border-slate-800 bg-slate-800">
           <Image
             src={image}
             alt={`${title} project preview`}
             fill
+            draggable={false}
             className="object-cover"
           />
         </div>
